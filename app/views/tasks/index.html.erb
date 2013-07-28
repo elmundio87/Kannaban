@@ -1,7 +1,7 @@
 <h1>All tasks</h1>
 <button onclick="document.getElementById('new_card').style.display = 'block';">New Card</button>
 <div>
-  <% @tasks.each do |task| %>
+  <% (@tasks.sort_by { |t| t.priority}).each do |task| %>
     <div class="card">
       <div class="card_title"><%= task.title %></div>
       <div class="card_status"><%= task.status %></div>
