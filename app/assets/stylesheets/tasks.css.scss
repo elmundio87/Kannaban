@@ -1,3 +1,44 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card {
+	position:relative;
+	background-color:yellow;
+	width:160px;
+	height:100px;
+	border: 1px solid black;
+	font-family: Comic Sans, Comic Sans MS, cursive	;
+	margin:10px;
+}
+
+.card_title{
+	position:relative;
+	left:10px;
+	top:10px;
+	font-size:14px;
+	width:130px;
+	height:80px;
+
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+.card_description{
+	
+}
+
+.card_status{
+	display:none;
+}
+
+.card_priority{
+    position: absolute;
+    right:0px;
+    top:0px;
+    font-size:20px;
+    margin: 5px;
+}
+
+
