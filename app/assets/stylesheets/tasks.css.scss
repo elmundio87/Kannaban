@@ -41,4 +41,16 @@
     margin: 5px;
 }
 
+#new_card{
+	#display:none;
+	position:absolute;
+	top:100px;
+	right:100px;
+	background:grey;
+	width:400px;
+	height:200px;
+	overflow: scroll;
+	border: 1px solid black;
+}
+
 
