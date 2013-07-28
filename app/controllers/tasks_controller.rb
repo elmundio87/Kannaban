@@ -14,6 +14,7 @@ end
 
 def show
   @task = Task.find(params[:id])
+  redirect_to action: "index"
 end
 
 def index
