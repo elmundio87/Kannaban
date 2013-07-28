@@ -1,5 +1,5 @@
 <h1>All tasks</h1>
- 
+<button onclick="document.getElementById('new_card').style.display = 'block';">New Card</button>
 <div>
   <% @tasks.each do |task| %>
     <div class="card">
@@ -8,7 +8,6 @@
       <div class="card_priority"><%= task.priority %></div>
     </div>
   <% end %>
-  <a href="tasks/new">New Card</a>
 </div>
 <div id="new_card">
 	<%=  render :file => "tasks/new.html.erb"  %>
