@@ -1,4 +1,4 @@
-class TasksController < ApplicationController
+class BoardController < ApplicationController
 
 def new 
 end
@@ -13,8 +13,8 @@ def create
 end
 
 def show
-  @task = Task.find(params[:id])
-  #redirect_to action: "index"
+  @tasks = Task.all
+  #redirect_to action: "show"
 end
 
 def index
@@ -25,5 +25,4 @@ private
   def task_params
     params.require(:task).permit(:title, :description,:status,:priority)
   end
-
 end

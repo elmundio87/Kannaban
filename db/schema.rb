@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20130728132056) do
 
   create_table "tasks", force: true do |t|
     t.string   "title"
-    t.text     "description"
     t.integer  "priority"
     t.string   "status"
     t.datetime "created_at"

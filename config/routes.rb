@@ -1,8 +1,12 @@
 Kannaban::Application.routes.draw do
   
+  get "swimlane/index"
+  get "board/index"
   resources :tasks
+  resources :board
 
   get "welcome/index"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

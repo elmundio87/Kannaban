@@ -1,0 +1,17 @@
+<table id="board" border="1">
+<tr>
+<th>Backlog</th><th>Prioritised</th><th>In Progress</th><th>Beer</th>
+</tr>
+<tr id="tasks_row">
+<td>
+ <% (@tasks.sort_by { |t| t.priority}).each do |task| %>
+    <div class="card draggable">
+      <div class="card_title"><%= task.title %></div>
+      <div class="card_status"><%= task.status %></div>
+      <div class="card_priority"><%= task.priority %></div>
+    </div>
+  <% end %>
+  </td><td></td><td></td><td></td>
+</tr>
+
+</table>
